@@ -108,8 +108,10 @@ const App = ({ isServerInfo }) => {
             <Route path="/Transactions">
               <NFTMarketTransactions />
             </Route>
+            <Route path="/">
+              <NFTTokenIds inputValue={inputValue} setInputValue={setInputValue}/> />
+            </Route>
           </Switch>
-          <Redirect to="/NFTMarketPlace" />
         </div>
       </Router>
       {/*<Footer style={{ textAlign: "center" }}>
