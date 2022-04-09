@@ -67,7 +67,7 @@ const App = ({ isServerInfo }) => {
     <Layout style={{ height: "100vh", overflow: "auto" }}>
       <Router>
         <Header style={styles.header}>
-          <Logo />
+          <img src="/favicon.png" style={{width:'25px'}}/>
           <SearchCollections setInputValue={setInputValue}/>
           <Menu
             theme="light"
@@ -112,7 +112,7 @@ const App = ({ isServerInfo }) => {
           <Redirect to="/NFTMarketPlace" />
         </div>
       </Router>
-      <Footer style={{ textAlign: "center" }}>
+      {/*<Footer style={{ textAlign: "center" }}>
         <Text style={{ display: "block" }}>
           ⭐️ Please star this{" "}
           <a
@@ -146,7 +146,7 @@ const App = ({ isServerInfo }) => {
             Moralis
           </a>
         </Text>
-      </Footer>
+          </Footer>*/}
     </Layout>
   );
 };
